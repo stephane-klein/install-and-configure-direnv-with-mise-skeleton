@@ -2,7 +2,9 @@
 
 ...
 
-## On OSX: install with Brew
+## Workspace installation and configuration
+
+### On OSX: install with Brew
 
 Brew is a popular package manager on *macOS*.
 However, it does not come pre-installed: follow the instructions from the Brew [Website](https://brew.sh/index_fr):
@@ -31,7 +33,7 @@ $ source ~/.zsrhrc
 $ mise install -y
 ```
 
-## Configure direnv
+### Configure direnv
 
 If you use **Bash** shell execute:
 
@@ -48,3 +50,14 @@ $ source ~/.zsrhrc
 ```
 
 More info see [direnv man page](https://direnv.net/#man/direnv.1)
+
+## Workspace usage
+
+```sh
+$ direnv allow
+```
+
+```
+$ echo $HELLO_WORLD
+foo
+```
