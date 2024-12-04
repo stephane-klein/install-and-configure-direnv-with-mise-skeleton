@@ -4,7 +4,10 @@
 
 ## Workspace installation and configuration
 
-### On OSX: install with Brew
+This development environment is based on [Mise](https://mise.jdx.dev/) and [direnv](https://direnv.net/).  
+The starting point is *Mise*, which installs *direnv* and all other local dependencies (except *Docker*).
+
+### On OSX: install Mise with Brew
 
 Brew is a popular package manager on *macOS*.
 However, it does not come pre-installed: follow the instructions from the Brew [Website](https://brew.sh/index_fr):
@@ -13,7 +16,19 @@ However, it does not come pre-installed: follow the instructions from the Brew [
 $ brew install git mise
 ```
 
-Next, activate mise ([you can see official documentation](https://mise.jdx.dev/getting-started.html))
+### On Fedora: install Mise with dnf
+
+Install with *dnf* ([see official Mise instructions](https://mise.jdx.dev/installing-mise.html#dnf))
+
+```sh
+$ dnf install -y dnf-plugins-core
+$ dnf config-manager --add-repo https://mise.jdx.dev/rpm/mise.repo
+$ dnf install -y mise
+```
+
+### Configure Mise
+
+Next, activate *mise* ([you can see official documentation](https://mise.jdx.dev/getting-started.html))
 
 If you use **Bash** shell execute:
 
