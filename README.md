@@ -41,7 +41,7 @@ If you use **Zsh** shell execute:
 
 ```sh
 $ echo 'eval "$(~/.local/bin/mise activate zsh)"' >> ~/.zshrc
-$ source ~/.zsrhrc
+$ source ~/.zshrc
 ```
 
 ```
