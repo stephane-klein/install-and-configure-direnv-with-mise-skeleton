@@ -38,14 +38,14 @@ Next, activate *mise* ([you can see official documentation](https://mise.jdx.dev
 If you use **Bash** shell execute:
 
 ```sh
-$ echo 'eval "$(~/.local/bin/mise activate bash)"' >> ~/.bashrc
+$ echo 'eval "$(mise activate bash)"' >> ~/.bashrc
 $ source ~/.bash_profile
 ```
 
 If you use **Zsh** shell execute:
 
 ```sh
-$ echo 'eval "$(~/.local/bin/mise activate zsh)"' >> ~/.zshrc
+$ echo 'eval "$(mise activate zsh)"' >> "${ZDOTDIR-$HOME}/.zshrc"
 $ source ~/.zshrc
 ```
 
