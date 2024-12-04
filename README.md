@@ -7,6 +7,11 @@
 This development environment is based on [Mise](https://mise.jdx.dev/) and [direnv](https://direnv.net/).  
 The starting point is *Mise*, which installs *direnv* and all other local dependencies (except *Docker*).
 
+*Mise* is a “tooling version management” system that allows you to install most of the tools needed for a development environment.
+It enables you to “pin” the precise versions of these tools.
+
+*direnv* dynamically manages environment variables by loading and unloading them based on the current directory.
+
 ### On OSX: install Mise with Brew
 
 Brew is a popular package manager on *macOS*.
